@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FSAE Wing Design — Oz</title>
+<title>FSAE Aero Design</title>
 <meta name="description" content="Front and rear wing design for the Formula SAE car — airfoil theory, CFD, and the 3D aero map.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -67,35 +67,34 @@
         <span class="step-num">01</span>
         <div>
           <h3>Airfoil selection &amp; 2D theory</h3>
-          <p>Working through low-Reynolds-number airfoil behavior and multi-element airfoil design using
-          XFLR5 and the UIUC Selig airfoil database, referencing McBeath's <em>Competition Car Aerodynamics</em>
-          for FSAE-specific ground-effect and wing-package guidance.</p>
+          <p>Running 2D simulations on various combinations of airfoils to determine the optimal
+            combination of geometries, sizes, angles of attack, and slot gaps.</p>
         </div>
       </div>
       <div class="step">
         <span class="step-num">02</span>
         <div>
           <h3>3D modeling in SolidWorks</h3>
-          <p>Modeled the wing as a twisted airfoil along a nonlinear span using Lofted Boss/Base with leading-
-          and trailing-edge guide curves and Pierce constraints at each spanwise station.</p>
+          <p>Sketches of airfoil profiles were extruded, endplates were added, and models were added to a bluff body model of the whole car.</p>
+          <p>Components designed for Flame 5 included the front wing, the rear wing, and whiskers on the sides of the nose cone to clean up airflow to the rear
+          wing and to direct air more smoothly over the radiator and oil intercooler.</p>
         </div>
       </div>
       <div class="step">
         <span class="step-num">03</span>
         <div>
           <h3>CFD validation in ANSYS Fluent</h3>
-          <p>2D and full-vehicle CFD sweeps in Fluent (steady and transient RANS; k&ndash;&omega;, k&ndash;&epsilon;,
-          and Transition SST turbulence models) to validate lift and drag coefficients before committing to a
-          final geometry.</p>
+          <p>3D sims of the whole aero package were run in ANSYS Fluent to determine coefficients of lift and drag. Contours were plotted on planes
+            running the length of the car to understand how each component interacted with the rest of the car.</p>
         </div>
       </div>
       <div class="step">
         <span class="step-num">04</span>
         <div>
           <h3>3D aero map</h3>
-          <p>A full-factorial CFD sweep across yaw, speed, and front wing ride height, interpolated in MATLAB,
-          to capture how the car's aero performance actually changes through a lap &mdash; not just at one
-          design point.</p>
+          <p>Once the aero package's design was finalized, a full aero map (yaw vs speed vs turn angle) was plotted using sims run in ANSYS Fluent, collecting data 
+            in Excel, and interpolating &amp; graphing that data in MATLAB.</p>
+          <p>Below is an interactive version of that same aero map &mdash; simply input three values within the parameters and see how Flame 5 performs.</p>
         </div>
       </div>
     </div>
@@ -156,7 +155,7 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <span>&copy; 2026 Oz</span>
+    <span>&copy; 2026 Grant Oswald</span>
     <span><a href="../index.html">Back to home</a></span>
   </div>
 </footer>
