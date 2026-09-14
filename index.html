@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oz — Engineering Portfolio</title>
+<meta name="description" content="Engineering portfolio — FSAE aerodynamics and coursework projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="wordmark">OZ <span>Engineering portfolio</span></a>
+    <nav class="site-nav">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="projects/fsae.html">FSAE Aero</a>
+      <a href="projects/class-projects.html">Class Projects</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero wrap">
+    <div>
+      <div class="role">Aerodynamics — Formula SAE</div>
+      <h1>Designing wings, reading airflow, chasing downforce.</h1>
+      <p>I'm an engineering student and Formula SAE team member, currently responsible for the front and rear
+      wing package. This site tracks that work — from airfoil theory through CFD to the finished part —
+      alongside larger coursework projects as I take them on.</p>
+    </div>
+    <div class="hero-figure" aria-hidden="true">
+      <!-- Line-art airfoil cross-section with a chord/dimension marker -->
+      <svg viewBox="0 0 420 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 150 C 70 100, 160 85, 260 92 C 330 97, 380 115, 400 135
+                 C 370 145, 300 158, 220 162 C 130 167, 55 165, 20 150 Z"
+              stroke="#EDEDE7" stroke-width="1.6"/>
+        <path d="M40 152 C 110 172, 220 176, 320 158" stroke="#5D636B" stroke-width="1" stroke-dasharray="2 4"/>
+        <line x1="20" y1="205" x2="400" y2="205" stroke="#454B53" stroke-width="1"/>
+        <line x1="20" y1="198" x2="20" y2="212" stroke="#454B53" stroke-width="1"/>
+        <line x1="400" y1="198" x2="400" y2="212" stroke="#454B53" stroke-width="1"/>
+        <text x="200" y="228" fill="#5D636B" font-family="Space Grotesk, sans-serif" font-size="13">chord</text>
+        <line x1="60" y1="60" x2="60" y2="118" stroke="#FF4E1F" stroke-width="1"/>
+        <line x1="53" y1="60" x2="67" y2="60" stroke="#FF4E1F" stroke-width="1"/>
+        <text x="30" y="52" fill="#FF4E1F" font-family="Space Grotesk, sans-serif" font-size="13">α</text>
+      </svg>
+    </div>
+  </section>
+
+  <hr class="dim-line wrap">
+
+  <!-- ============ ACADEMIC SNAPSHOT ============ -->
+  <section class="block wrap" id="about">
+    <div class="block-head">
+      <h2>Academic snapshot</h2>
+    </div>
+    <dl class="spec-sheet">
+      <div class="spec-row">
+        <dt>School</dt>
+        <dd><span class="placeholder">Add your university</span></dd>
+      </div>
+      <div class="spec-row">
+        <dt>Program</dt>
+        <dd><span class="placeholder">Add your major / degree</span></dd>
+      </div>
+      <div class="spec-row">
+        <dt>Standing</dt>
+        <dd><span class="placeholder">Add your year, e.g. Junior</span></dd>
+      </div>
+      <div class="spec-row">
+        <dt>GPA</dt>
+        <dd><span class="placeholder">Add GPA, or remove this row</span></dd>
+      </div>
+      <div class="spec-row">
+        <dt>Relevant coursework</dt>
+        <dd><span class="placeholder">List classes — e.g. Fluid Dynamics, Vehicle Dynamics, CAD/CAM</span></dd>
+      </div>
+      <div class="spec-row">
+        <dt>Team role</dt>
+        <dd>Front &amp; rear wing design, Formula SAE</dd>
+      </div>
+    </dl>
+  </section>
+
+  <hr class="dim-line wrap">
+
+  <!-- ============ PROJECT INDEX ============ -->
+  <section class="block wrap" id="projects">
+    <div class="block-head">
+      <h2>Projects</h2>
+      <span class="block-note">More added as work is completed</span>
+    </div>
+    <div class="parts-list">
+      <a class="part" href="projects/fsae.html">
+        <span class="part-mark">01</span>
+        <span class="part-body">
+          <h3>FSAE front &amp; rear wing design</h3>
+          <p>Airfoil selection, CFD validation in ANSYS Fluent, and a 3D aero map across yaw, speed, and ride height.</p>
+        </span>
+        <span class="part-status live">In progress</span>
+      </a>
+      <a class="part" href="projects/class-projects.html">
+        <span class="part-mark">02</span>
+        <span class="part-body">
+          <h3>Class projects</h3>
+          <p>Larger coursework projects, added here as they're completed.</p>
+        </span>
+        <span class="part-status">Coming soon</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; 2026 Oz</span>
+    <span><a href="https://github.com/">GitHub</a> — add your profile link</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
