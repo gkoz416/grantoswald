@@ -30,7 +30,7 @@
     <div class="role">Intro to Engineering Fundamentals</div>
     <h1 style="font-size:clamp(1.9rem,4vw,2.8rem); max-width:20ch;">Mousetrap Car Competition</h1>
     <p style="color:var(--text-dim); font-size:1.05rem; margin-top:1rem;">
-      Designing and building a car powered by a mousetrap spring, designing for both speed and distance by including a simple transmission in the plans.
+      Project Goals: Design and build a car powered by a mousetrap spring, designing for both speed and distance by including a simple transmission in the plans.
     </p>
   </section>
 
@@ -61,72 +61,35 @@
       <div class="step">
         <span class="step-num">01</span>
         <div>
-          <h3>Airfoil selection &amp; 2D theory</h3>
-          <p>Working through low-Reynolds-number airfoil behavior and multi-element airfoil design using
-          XFLR5 and the UIUC Selig airfoil database, referencing McBeath's <em>Competition Car Aerodynamics</em>
-          for FSAE-specific ground-effect and wing-package guidance.</p>
+          <h3>Set Goals and Timeline</h3>
+          <p>The team met and decided a rough outline of what the car should look like and what we wanted the car to do (e.g., top speed, maximum distance,
+          braking distance, etc.</p>
         </div>
       </div>
       <div class="step">
         <span class="step-num">02</span>
         <div>
-          <h3>3D modeling in SolidWorks</h3>
-          <p>Modeled the wing as a twisted airfoil along a nonlinear span using Lofted Boss/Base with leading-
-          and trailing-edge guide curves and Pierce constraints at each spanwise station.</p>
+          <h3>MATLAB Simulations</h3>
+          <p>Once gear ratios, wheel sizes, and propulsion arm dimensions were established, we calculated what the top speed, maximum distance, and
+          maximum acceleration would be using equations provided by our professor.</p>
         </div>
       </div>
       <div class="step">
         <span class="step-num">03</span>
         <div>
-          <h3>CFD validation in ANSYS Fluent</h3>
-          <p>2D and full-vehicle CFD sweeps in Fluent (steady and transient RANS; k&ndash;&omega;, k&ndash;&epsilon;,
-          and Transition SST turbulence models) to validate lift and drag coefficients before committing to a
-          final geometry.</p>
+          <h3>SolidWorks Modeling</h3>
+          <p>Once the goals and dimensions were set, we modeled the car in CAD and determined how to manufacture each part. For this project, at least
+          two different manufacturing processes were required. </p>
         </div>
       </div>
       <div class="step">
         <span class="step-num">04</span>
         <div>
-          <h3>3D aero map</h3>
-          <p>A full-factorial CFD sweep across yaw, speed, and front wing ride height, interpolated in MATLAB,
-          to capture how the car's aero performance actually changes through a lap &mdash; not just at one
-          design point.</p>
+          <h3>Manufacturing and Testing</h3>
+          <p>Lastly, the team used tools resources from the university's MakerSpace and 3D printing lab to bring the car to life. Once the car was put
+          together, we were able to test the car with enough time to tweak the design as needed.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <hr class="dim-line wrap">
-
-  <!-- ============ AERO MAP EMBED PLACEHOLDER ============ -->
-  <section class="block wrap">
-    <div class="block-head">
-      <h2>Interactive aero map</h2>
-      <span class="block-note">Placeholder — embeds once the sweep is complete</span>
-    </div>
-    <p style="color:var(--text-dim); margin-bottom:1rem;">
-      This section will hold an interactive 3D aero map: query lift and drag coefficients across yaw,
-      speed, and front wing ride height, built from the Fluent CFD sweep and MATLAB interpolation pipeline.
-    </p>
-    <div class="placeholder-media" style="min-height:340px;">
-      <span><strong>Aero map embed</strong>Cl / Cd vs. yaw, speed, ride height &mdash; coming once the sweep and interpolation are finished</span>
-    </div>
-  </section>
-
-  <hr class="dim-line wrap">
-
-  <!-- ============ CROSS-SECTION SLIDESHOW PLACEHOLDER ============ -->
-  <section class="block wrap">
-    <div class="block-head">
-      <h2>Cross-section flow visualization</h2>
-      <span class="block-note">Placeholder — video/slideshow to come</span>
-    </div>
-    <p style="color:var(--text-dim); margin-bottom:1rem;">
-      An interactive slideshow moving through cross-section planes of the full car, showing how the
-      front and rear wings shape the flow field around the whole vehicle rather than in isolation.
-    </p>
-    <div class="placeholder-media" style="min-height:340px;">
-      <span><strong>Cross-section viewer</strong>Full-car CFD planes, front to rear</span>
     </div>
   </section>
 
@@ -135,15 +98,12 @@
   <!-- ============ KEY LEARNINGS ============ -->
   <section class="block wrap">
     <div class="block-head">
-      <h2>Notes along the way</h2>
+      <h2>Lessons Learned &amp; Challenges Overcome</h2>
     </div>
     <ul style="color:var(--text-dim); padding-left:1.1rem; max-width:var(--measure);">
-      <li style="margin-bottom:0.6rem;">Yaw angle isn't the same as turn radius &mdash; the correct CFD input
-      (sideslip angle &beta;) depends on both speed and turn radius together, via a bicycle model.</li>
-      <li style="margin-bottom:0.6rem;">Oscillating CFD residuals don't always mean the solver failed &mdash;
-      at FSAE Reynolds numbers, a bluff body can genuinely have no steady-state solution.</li>
-      <li>A single-variable sweep can't support a 3D interpolated map &mdash; a full factorial design is
-      needed to capture how variables interact.</li>
+      <li style="margin-bottom:0.6rem;">Basic understanding of how to use SolidWorks and MATLAB</li>
+      <li style="margin-bottom:0.6rem;">Time management to allow for unforeseen roadblocks (3D print lab's request log getting heavily backed up)</li>
+      <li style="margin-bottom:0.6rem;"></li>
     </ul>
   </section>
 
@@ -151,8 +111,8 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <span>&copy; 2026 Oz</span>
-    <span><a href="../index.html">Back to home</a></span>
+    <span>&copy; 2026 Grant Oswald</span>
+    <span><a href="../index.html">Back to Home</a></span>
   </div>
 </footer>
 
