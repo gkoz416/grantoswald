@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FSAE Wing Design — Oz</title>
+<title>This Website</title>
 <meta name="description" content="Front and rear wing design for the Formula SAE car — airfoil theory, CFD, and the 3D aero map.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,30 +14,24 @@
 
 <header class="site-header">
   <div class="wrap">
-    <a href="../index.html" class="wordmark">OZ <span>Engineering portfolio</span></a>
+    <a href="../index.html" class="wordmark">GKO <span>Other Projects</span></a>
     <nav class="site-nav">
       <a href="../index.html">Home</a>
-      <a href="fsae.html" aria-current="page">FSAE Aero</a>
+      <a href="fsae.html">FSAE Aero</a>
       <a href="class-projects.html">Class Projects</a>
+      <a href="about-me.html">About Me</a>
     </nav>
   </div>
 </header>
 
 <main>
   <section class="block wrap">
-    <a href="../index.html" class="back-link">&larr; Back to projects</a>
-    <div class="role">Formula SAE</div>
-    <h1 style="font-size:clamp(1.9rem,4vw,2.8rem); max-width:20ch;">Front &amp; rear wing design</h1>
+    <a href="class-projects.html" class="back-link">&larr; Back to projects</a>
+    <h1 style="font-size:clamp(1.9rem,4vw,2.8rem); max-width:20ch;">Building this website</h1>
     <p style="color:var(--text-dim); font-size:1.05rem; margin-top:1rem;">
-      Responsible for the aero package on this year's car: airfoil selection, CFD validation, and a full
-      3D aerodynamic map used to tune the wings across the car's real operating range — not just one design point.
+      Project Goals: Build a website on GitHub that will clearly and cleanly display my engineering skills and projects. The bones of
+      the website will be vibe coded, but the details will be tweaked by myself.
     </p>
-    <div class="tag-row">
-      <span class="tag">XFLR5</span>
-      <span class="tag">SolidWorks</span>
-      <span class="tag">ANSYS Fluent</span>
-      <span class="tag">MATLAB</span>
-    </div>
   </section>
 
   <hr class="dim-line wrap">
@@ -45,13 +39,12 @@
   <!-- ============ GALLERY PLACEHOLDER ============ -->
   <section class="block wrap">
     <div class="block-head">
-      <h2>Gallery</h2>
-      <span class="block-note">Placeholder — CAD renders &amp; photos to come</span>
+      <h2>Photo Gallery</h2>
+      <span class="block-note">Backend Sneak Peeks</span>
     </div>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:1rem;">
-      <div class="placeholder-media"><span><strong>CAD render</strong>Front wing assembly</span></div>
-      <div class="placeholder-media"><span><strong>CAD render</strong>Rear wing assembly</span></div>
-      <div class="placeholder-media"><span><strong>Photo</strong>Wing on car</span></div>
+    <div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:1rem;">
+      <img src="../images/this-website-projects-list.png" alt="List of All Project Files Associated with This Website">
+      <img src="../images/this-website-updates-count.png" alt="List of Website Updates as of 9.16.2026">
     </div>
   </section>
 
@@ -60,78 +53,41 @@
   <!-- ============ DESIGN PROCESS ============ -->
   <section class="block wrap">
     <div class="block-head">
-      <h2>Design process</h2>
+      <h2>Website-Building Process</h2>
     </div>
     <div class="process">
       <div class="step">
         <span class="step-num">01</span>
         <div>
-          <h3>Airfoil selection &amp; 2D theory</h3>
-          <p>Working through low-Reynolds-number airfoil behavior and multi-element airfoil design using
-          XFLR5 and the UIUC Selig airfoil database, referencing McBeath's <em>Competition Car Aerodynamics</em>
-          for FSAE-specific ground-effect and wing-package guidance.</p>
+          <h3>Vibe Code the Basics</h3>
+          <p>I do not currently know how to code, but I wanted to make a website to easily share what I have accomplished during my engineering career. So, I used
+            Claude, Anthropic's AI agent, to vibe code the necessities for the website (styles, fonts, page files, placeholders for specific items, etc.). 
+            Once the code was generated, the site was published via GitHub pages so that I could see how my updates worked in real-time.
+            </p>
         </div>
       </div>
       <div class="step">
         <span class="step-num">02</span>
         <div>
-          <h3>3D modeling in SolidWorks</h3>
-          <p>Modeled the wing as a twisted airfoil along a nonlinear span using Lofted Boss/Base with leading-
-          and trailing-edge guide curves and Pierce constraints at each spanwise station.</p>
+          <h3>Tweak and Improve Site Pages</h3>
+          <p>With the necessities in place, small changes needed to be made: putting my full name instead of just my first, adding details where
+            Claude put placeholders, adding sections as necessary to display the correct information, etc. Some of this was as simple as typing out what I
+            wanted a text box to say, but other times it was asking Claude for further details about how to add a specific section or how to change a layout.
+            Most of the time this was still vibe coding, but some of the time was me asking Claude for direction but writing the code myself.
+          </p>
         </div>
       </div>
       <div class="step">
         <span class="step-num">03</span>
         <div>
-          <h3>CFD validation in ANSYS Fluent</h3>
-          <p>2D and full-vehicle CFD sweeps in Fluent (steady and transient RANS; k&ndash;&omega;, k&ndash;&epsilon;,
-          and Transition SST turbulence models) to validate lift and drag coefficients before committing to a
-          final geometry.</p>
+          <h3>Complex Implementation/Future Plans</h3>
+          <p>The biggest project I wanted to show off was the aero map for Flame 5, and to find a way to integrate that into the FSAE page. The aero map is
+            not yet done, but once it is the plan is to find a way to integrate it into the site so that anyone can input a valid speed, yaw, and ride height,
+            and see exactly how Flame 5 is projected to perform. Other than that I would also like to implement a cross-sectional interactive slideshow to see
+            head-on how the air acts as it flows over Flame 5 and its components.
+          </p>
         </div>
       </div>
-      <div class="step">
-        <span class="step-num">04</span>
-        <div>
-          <h3>3D aero map</h3>
-          <p>A full-factorial CFD sweep across yaw, speed, and front wing ride height, interpolated in MATLAB,
-          to capture how the car's aero performance actually changes through a lap &mdash; not just at one
-          design point.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr class="dim-line wrap">
-
-  <!-- ============ AERO MAP EMBED PLACEHOLDER ============ -->
-  <section class="block wrap">
-    <div class="block-head">
-      <h2>Interactive aero map</h2>
-      <span class="block-note">Placeholder — embeds once the sweep is complete</span>
-    </div>
-    <p style="color:var(--text-dim); margin-bottom:1rem;">
-      This section will hold an interactive 3D aero map: query lift and drag coefficients across yaw,
-      speed, and front wing ride height, built from the Fluent CFD sweep and MATLAB interpolation pipeline.
-    </p>
-    <div class="placeholder-media" style="min-height:340px;">
-      <span><strong>Aero map embed</strong>Cl / Cd vs. yaw, speed, ride height &mdash; coming once the sweep and interpolation are finished</span>
-    </div>
-  </section>
-
-  <hr class="dim-line wrap">
-
-  <!-- ============ CROSS-SECTION SLIDESHOW PLACEHOLDER ============ -->
-  <section class="block wrap">
-    <div class="block-head">
-      <h2>Cross-section flow visualization</h2>
-      <span class="block-note">Placeholder — video/slideshow to come</span>
-    </div>
-    <p style="color:var(--text-dim); margin-bottom:1rem;">
-      An interactive slideshow moving through cross-section planes of the full car, showing how the
-      front and rear wings shape the flow field around the whole vehicle rather than in isolation.
-    </p>
-    <div class="placeholder-media" style="min-height:340px;">
-      <span><strong>Cross-section viewer</strong>Full-car CFD planes, front to rear</span>
     </div>
   </section>
 
@@ -140,15 +96,10 @@
   <!-- ============ KEY LEARNINGS ============ -->
   <section class="block wrap">
     <div class="block-head">
-      <h2>Notes along the way</h2>
+      <h2>Lessons Learned &amp; Challenges Overcome</h2>
     </div>
     <ul style="color:var(--text-dim); padding-left:1.1rem; max-width:var(--measure);">
-      <li style="margin-bottom:0.6rem;">Yaw angle isn't the same as turn radius &mdash; the correct CFD input
-      (sideslip angle &beta;) depends on both speed and turn radius together, via a bicycle model.</li>
-      <li style="margin-bottom:0.6rem;">Oscillating CFD residuals don't always mean the solver failed &mdash;
-      at FSAE Reynolds numbers, a bluff body can genuinely have no steady-state solution.</li>
-      <li>A single-variable sweep can't support a 3D interpolated map &mdash; a full factorial design is
-      needed to capture how variables interact.</li>
+      <li style="margin-bottom:0.6rem;">Ultra-basic understanding of back-end programming and how HTML works</li>
     </ul>
   </section>
 
@@ -156,8 +107,8 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <span>&copy; 2026 Oz</span>
-    <span><a href="../index.html">Back to home</a></span>
+    <span>&copy; 2026 Grant Oswald</span>
+    <span><a href="../index.html">Back to Home</a></span>
   </div>
 </footer>
 
