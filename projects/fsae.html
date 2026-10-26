@@ -71,10 +71,14 @@
   exposure="0.6" environment-image="neutral" shadow-intensity="1"
   style="width:100%; height:450px; background: linear-gradient(to bottom, #aeb9c7, #e4e8ed);">
 </model-viewer>
+    </div>
+    <div>
       <model-viewer src="../images/flame-5-r.9.glb" camera-controls alt="Front wing CAD model"
   exposure="0.6" environment-image="neutral" shadow-intensity="1"
   style="width:100%; height:450px; background: linear-gradient(to bottom, #aeb9c7, #e4e8ed);">
 </model-viewer>
+    </div>
+      <div>
       <model-viewer src="../images/flame-5-aero-assm.glb" camera-controls alt="Front wing CAD model"
   exposure="0.6" environment-image="neutral" shadow-intensity="1"
   style="width:100%; height:450px; background: linear-gradient(to bottom, #aeb9c7, #e4e8ed);">
@@ -161,21 +165,6 @@
   </section>
 
   <hr class="dim-line wrap">
-
-  <!-- ============ KEY LEARNINGS ============ -->
-  <section class="block wrap">
-    <div class="block-head">
-      <h2>Notes along the way</h2>
-    </div>
-    <ul style="color:var(--text-dim); padding-left:1.1rem; max-width:var(--measure);">
-      <li style="margin-bottom:0.6rem;">Yaw angle isn't the same as turn radius &mdash; the correct CFD input
-      (sideslip angle &beta;) depends on both speed and turn radius together, via a bicycle model.</li>
-      <li style="margin-bottom:0.6rem;">Oscillating CFD residuals don't always mean the solver failed &mdash;
-      at FSAE Reynolds numbers, a bluff body can genuinely have no steady-state solution.</li>
-      <li>A single-variable sweep can't support a 3D interpolated map &mdash; a full factorial design is
-      needed to capture how variables interact.</li>
-    </ul>
-  </section>
 
 </main>
 
